@@ -1,0 +1,364 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --red: #eb1d36;
+  --grey: #cfd2cf;
+  --lightblue: #a2b5bb;
+  --swhite: #f5eddc;
+}
+nav {
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  animation: navigation 1.5s ease-in-out;
+}
+@keyframes navigation {
+  0% {
+    transform: translateY(-100%);
+  }
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.main {
+  color: var(--grey);
+  animation: main 1.5s linear;
+}
+@keyframes main {
+  0% {
+    opacity: 0;
+    transform: translateX(-280%);
+  }
+}
+.main h3 {
+  text-transform: capitalize;
+  margin: 20px;
+  font-size: 3rem;
+}
+.main h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.main button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0;
+  position: relative;
+  left: 100px;
+  transition: 1s;
+  background-color: black;
+  color: var(--swhite);
+  box-shadow: 3px 3px 8px black;
+}
+.main button:hover {
+  background-color: var(--grey);
+  color: black;
+}
+.mainf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.about h2 {
+  text-align: center;
+  margin: 15px;
+}
+span {
+  color: var(--red);
+}
+.aboutus {
+  display: flex;
+  min-width: 334px;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus img {
+  width: 350px;
+  height: 250px;
+  margin: 30px;
+}
+.aboutus p {
+  justify-self: center;
+  margin: 30px;
+  width: 350px;
+  line-height: 25px;
+}
+
+.logo {
+  flex: 1;
+  margin-left: 5px;
+  color: bisque;
+}
+i {
+  margin-right: 10px;
+  color: var(--red);
+}
+ul li:nth-child(4) {
+  display: none;
+}
+nav ul li {
+  flex: 1;
+  margin-top: 10px;
+}
+ul li a {
+  margin-left: 60px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--grey);
+  display: inline-block;
+}
+
+ul li a:hover {
+  color: var(--swhite);
+}
+ul li a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  transition: transform 1s;
+  background-color: var(--red);
+  display: block;
+  transform: scale(0);
+}
+ul li a:hover::after {
+  transform: scale(1);
+}
+.landing {
+  background-image: linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url(/images/blackburger.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 100%;
+}
+.dish_head {
+  text-align: center;
+  padding: 25px 0px;
+  min-width: 334px;
+  text-transform: capitalize;
+}
+.container {
+  background-color: var(--grey);
+  display: grid;
+  min-width: 334px;
+  grid-template-columns: 340px 340px 300px;
+  justify-content: center;
+  margin: 0 10px;
+}
+.chefs img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  transition: opacity 1s;
+}
+.chefs {
+  position: relative;
+}
+.chefs:hover img {
+  transition: opacity 1s;
+  opacity: 0.4;
+}
+.chefs:hover .txt h3 {
+  transition: opacity 1.5s;
+  opacity: 1;
+}
+.txt h3 {
+  position: absolute;
+  top: 95px;
+  left: 120px;
+  transition: opacity 1.5s;
+  opacity: 0;
+  color: var(--black);
+}
+.container1 {
+  display: flex;
+  min-height: 300px;
+  min-width: 334px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.price img {
+  height: 260px;
+  width: 240px;
+}
+.price {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30px;
+  transition-duration: 1s;
+  width: 240px;
+  background-color: var(--red);
+}
+.price:hover {
+  transform: translateY(-20px);
+}
+.price p {
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+  color: var(--swhite);
+}
+footer {
+  background-color: var(--lightblue);
+  min-height: 80%;
+  min-width: 334px;
+  margin-top: 20px;
+  position: relative;
+}
+.fh3 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.logos {
+  display: flex;
+
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.logos div {
+  height: 50px;
+  width: 80px;
+  background-color: black;
+  border-radius: 80px;
+  margin-right: 10px;
+  text-align: center;
+  overflow: hidden;
+  color: var(--swhite);
+  transition-duration: 0.5s;
+}
+.logos i {
+  font-size: 2em;
+  padding: 8px 0px;
+  color: var(--lightblue);
+}
+.logos div a {
+  display: none;
+  text-decoration: none;
+  color: var(--swhite);
+}
+.logos div:hover {
+  width: 150px;
+  transition: 1s;
+}
+.logos div:hover i {
+  display: none;
+}
+.logos div:hover a {
+  padding-top: 15px;
+
+  display: block;
+}
+.fdetails {
+  display: flex;
+
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.loc h2 {
+  margin-bottom: 10px;
+  transition: 1s;
+}
+.loc:hover.loc h2 {
+  transition: 1s;
+  color: var(--red);
+  transform: translateY(-20px);
+}
+
+.loc {
+  width: 200px;
+  margin: 10px;
+  transition: 1s;
+  padding: 5px;
+}
+.loc p {
+  line-height: 25px;
+}
+.copyrights {
+  margin-left: 10px;
+  font-size: 15px;
+}
+::selection {
+  color: var(--red);
+  background-color: var(--grey);
+}
+@media all and (max-width: 980px) {
+  .container {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media all and (max-width: 900px) {
+  .aboutus {
+    flex-direction: column;
+  }
+  .about img {
+    align-self: center;
+
+    margin-left: 10px;
+  }
+  .aboutus p {
+    align-self: center;
+    margin-left: 20px;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .navli {
+    display: none;
+  }
+  .landing {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.479)),
+      url(/images/chilles.jpg);
+    height: 450px;
+    min-width: 334px;
+  }
+  ul li:nth-child(4) {
+    display: block;
+  }
+  .container {
+    grid-template-columns: 300px;
+  }
+  .mainf {
+    margin-top: 50px;
+  }
+  .main h3,
+  h2 {
+    margin-left: 15px;
+    font-size: 1.5rem;
+  }
+  .aboutus img {
+    width: 300px;
+    height: 220px;
+    margin: 30px;
+  }
+  .aboutus p {
+    justify-self: center;
+    margin: 10px;
+    width: 300px;
+    line-height: 25px;
+  }
+  .fdetails {
+    flex-direction: column;
+    align-items: center;
+  }
+  .loc h2 {
+    margin-left: 0px;
+  }
+}
