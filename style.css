@@ -325,7 +325,7 @@ footer {
   }
   .landing {
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.479)),
-      url(/images/chilles.jpg);
+      url("/images/chilles.jpg");
     height: 450px;
     min-width: 334px;
   }
