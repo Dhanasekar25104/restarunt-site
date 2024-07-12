@@ -137,7 +137,7 @@ ul li a:hover::after {
       rgba(0, 0, 0, 0.1),
       rgb(0, 0, 0)
     ),
-    url(/images/blackburger.jpg);
+    url(images/blackburger.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
